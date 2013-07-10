@@ -15,6 +15,9 @@
 			</hgroup>			
 		</header>
 	<section class="post-content">
+		<?php if ( has_post_thumbnail() ) : ?>
+			<?php the_post_thumbnail(); ?>
+		<?php endif; ?>
 		<?php the_content(); ?>
 	</section>
 	<footer class="post-footer">
